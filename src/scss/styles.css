@@ -1,0 +1,188 @@
+/* === variables === */
+:root {
+  /* === colores === */
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --Blue: hsl(248, 32%, 49%);
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+  /* === font ===  */
+  --body-font-family: "Poppins", sans-serif;
+  --regular: 400;
+  --semibold: 500;
+  --bold: 700;
+}
+
+/* === reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  font-family: var(--body-font-family);
+  font-weight: var(--regular);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.sign-up {
+  background: var(--Red) url("/images/bg-intro-mobile.png");
+  min-height: 100vh;
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-up__container {
+  max-width: 1120px;
+  padding: 0 1rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr;
+  gap: 2em;
+}
+.sign-up__data {
+  text-align: center;
+}
+.sign-up__data h1,
+.sign-up__data p {
+  color: #fff;
+}
+.sign-up__data h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+.sign-up__form header {
+  background-color: var(--Blue);
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding: 0.8rem 2rem;
+  border-radius: 10px;
+}
+.sign-up__form header span {
+  font-weight: var(--bold);
+}
+@media (min-width: 375px) {
+  .sign-up {
+    background-image: url("/images/bg-intro-desktop.png");
+  }
+}
+@media (min-width: 768px) {
+  .sign-up {
+    gap: 5rem;
+  }
+  .sign-up__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sign-up__data {
+    text-align: start;
+  }
+}
+
+.form {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 30px 40px;
+}
+.form__control {
+  position: relative;
+  /* === success and error === */
+}
+.form__control input {
+  width: 100%;
+  height: 3rem;
+  padding: 20px;
+  border: 2px solid var(--Grayish-Blue);
+  border-radius: 5px;
+}
+.form__control input::-moz-placeholder {
+  color: var(--Grayish-Blue);
+  font-size: 1rem;
+}
+.form__control input:-ms-input-placeholder {
+  color: var(--Grayish-Blue);
+  font-size: 1rem;
+}
+.form__control input::placeholder {
+  color: var(--Grayish-Blue);
+  font-size: 1rem;
+}
+.form__control i,
+.form__control small {
+  visibility: hidden;
+}
+.form__control i {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+.form__control small {
+  color: var(--Red);
+}
+.form__control.success input {
+  border-color: var(--Green);
+}
+.form__control.success .img-success {
+  visibility: visible;
+}
+.form__control.error input {
+  border-color: var(--Red);
+}
+.form__control.error .img-error, .form__control.error small {
+  visibility: visible;
+}
+.form__control.error small {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.form__button input[type=submit] {
+  width: 100%;
+  cursor: pointer;
+  background-color: var(--Green);
+  padding: 15px 30px;
+  text-transform: uppercase;
+  font-weight: var(--bold);
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.form__button input[type=submit]:hover {
+  filter: brightness(0.9);
+}
+.form__button span {
+  font-weight: var(--bold);
+  color: var(--Red);
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,28 @@
+/* === variables === */
+
+:root {
+    /* === colores === */
+
+    // Primary
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+
+    // Accent
+
+    --Blue: hsl(248, 32%, 49%);
+
+    // Neutral
+
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+
+    /* === font ===  */
+
+    --body-font-family: "Poppins", sans-serif;
+
+    // Weights
+
+    --regular: 400;
+    --semibold: 500;
+    --bold: 700;
+}
