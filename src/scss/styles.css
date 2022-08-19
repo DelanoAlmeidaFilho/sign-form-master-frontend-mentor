@@ -60,7 +60,7 @@ img {
 .sign-up {
   background: var(--Red) url("/images/bg-intro-mobile.png");
   min-height: 100vh;
-  padding-top: 5rem;
+  padding: 5rem 0rem;
   display: flex;
   justify-content: center;
   align-items: center;
